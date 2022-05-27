@@ -27,3 +27,9 @@ div.login {
     color: white;
     font-family: var(--fonte-padrao);
 }
+
+nav {
+    margin: auto;
+    padding: auto;
+    
+}
