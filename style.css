@@ -16,7 +16,13 @@ body {
 background-color: var(--cor2);
 }
 
-h1.login {
+h1.titulo {
+    text-align: center;
+    color: white;
+    font-family: var(--fonte-padrao);
+}
+
+div.login {
     text-align: center;
     color: white;
     font-family: var(--fonte-padrao);
