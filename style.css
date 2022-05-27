@@ -10,19 +10,24 @@
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif; 
 }
 
-
+*{
+    margin: auto;
+    padding: auto;
+}
 
 body {
 background-color: var(--cor2);
 }
 
 h1.titulo {
+    margin: 100px;
     text-align: center;
     color: white;
     font-family: var(--fonte-padrao);
 }
 
 div.login {
+    margin: 100px;
     text-align: center;
     color: white;
     font-family: var(--fonte-padrao);
@@ -30,5 +35,5 @@ div.login {
 
 nav {
 text-align: center;
-
+margin: 300px;
 }
