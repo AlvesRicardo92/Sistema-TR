@@ -1,0 +1,13 @@
+@charset "UTC-8";
+
+:root {
+    --cor1: #FCFCFC;
+    --cor2: #BDBDBD;
+    --cor3: #7D7D7D;
+    --cor4: #707070;
+    --cor5: #575757;
+}
+
+/*body {
+    background-image: linear-gradient(var(--cor1), var(--cor3));
+}*/
