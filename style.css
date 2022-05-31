@@ -20,6 +20,8 @@ background-color: var(--cor2);
 }
 
 h1.titulo {
+    font-size: 40px;
+    font-style: italic;
     margin: 100px;
     text-align: center;
     color: white;
