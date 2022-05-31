@@ -6,6 +6,7 @@
     --cor3: #7D7D7D;
     --cor4: #707070;
     --cor5: #575757;
+    --cor6: blue;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif; 
 }
@@ -14,6 +15,7 @@
 
 body {
 background-color: var(--cor2);
+
 }
 
 h1.titulo {
@@ -47,7 +49,9 @@ color: black;
 }
 
 
-
+.menu:hover{
+    border-style: var(--cor6);
+}
 .menu img {
     width: 90px;
     height: 90px;
