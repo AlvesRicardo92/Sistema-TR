@@ -6,7 +6,7 @@
     --cor3: #7D7D7D;
     --cor4: #707070;
     --cor5: #575757;
-    --cor6: blue;
+    
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif; 
 }
@@ -40,8 +40,8 @@ text-decoration: none;
 text-transform: uppercase;
 font-weight: bold;
 font-size: 12px;
-border-radius: 10px;
-border: 3px solid;
+/*border-radius: 10px;
+border: 3px solid;*/
 text-align: center;
 padding: 10px;
 font-family: var(--fonte-padrao);
@@ -49,8 +49,12 @@ color: black;
 }
 
 
-.menu:hover{
-    border-style: var(--cor6);
+nav a:hover{
+    text-decoration: underline;
+    transition: 0.2s;
+    border-radius: 10px;
+    border: 3px solid black;
+    
 }
 .menu img {
     width: 90px;
