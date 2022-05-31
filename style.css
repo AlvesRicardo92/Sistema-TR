@@ -10,10 +10,7 @@
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif; 
 }
 
-*{
-    margin: auto;
-    padding: auto;
-}
+
 
 body {
 background-color: var(--cor2);
@@ -35,7 +32,32 @@ div.login {
     font-family: var(--fonte-padrao);
 }
 
-nav {
+.menu {
+display: inline-block;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 12px;
+border-radius: 10px;
+border-bottom: 3px solid;
 text-align: center;
-margin: 300px;
+padding: 10px;
+font-family: var(--fonte-padrao);
+color: black;
+bac
+}
+
+menu:hover {
+    background-color: white;
+}
+
+.menu img {
+    width: 90px;
+    height: 90px;
+}
+
+nav {
+    margin: 300px;
+    border-radius: 10px;
+    
 }
