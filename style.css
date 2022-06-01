@@ -19,8 +19,8 @@ body {
 background-color: var(--cor2);
 font-family: var(--fonte-diferente);
 font-weight: bold;
-
 }
+
 
 h1.titulo {
     font-size: 40px;
@@ -91,9 +91,10 @@ nav {
 
 .pagina {
     line-height: 30px;
+    margin-left: 20%;
 }
 
-.teste{
+.escolha{
     position: relative;
     left: 434px;
     top: -29px;
