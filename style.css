@@ -34,6 +34,7 @@ h1.titulo {
 
 h1 {
     text-align: center;
+    
 }
 
 div.voltar{
@@ -92,5 +93,13 @@ nav {
     line-height: 30px;
 }
 
+.teste{
+    position: relative;
+    left: 434px;
+    top: -29px;
+    
+    margin-right: 500px;
+    
+}
 
 
