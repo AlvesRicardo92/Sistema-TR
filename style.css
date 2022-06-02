@@ -34,6 +34,8 @@ h1.titulo {
 
 h1 {
     text-align: center;
+    font-size: 25px;
+    
     
 }
 
@@ -98,10 +100,31 @@ nav {
 
 .escolha{
     position: absolute;
-    left: 950px;
-    top: 90px;
+    left: 800px;
+    top: 70px;
     margin-right: 500px;
     
 }
 
+.carrogag {
+    
+}
+
+.carrorfj {
+    position: absolute;
+    left: 550px;
+    top: 100px;
+}
+
+.carrofno {
+    position: absolute;
+    left: 800px;
+    top: 100px;
+}
+
+.carroghy {
+    position: absolute;
+    left: 1045px;
+    top: 100px;
+}
 
