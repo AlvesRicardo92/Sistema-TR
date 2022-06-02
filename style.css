@@ -128,3 +128,16 @@ nav {
     top: 100px;
 }
 
+.tanque img {
+    width: 200px;
+    height: 80px;
+    padding: 0px;
+    
+}
+
+.km {
+    position: absolute;
+    left: 560px;
+    top: 930px;
+}
+
