@@ -84,15 +84,16 @@ nav a:hover{
 }
 
 nav {
-    margin: 300px;
+    margin: 272px;
     border-radius: 10px;
+
     
 }
 
 .pagina {
     line-height: 30px;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20%;
+    margin-right: 15%;
 }
 
 .escolha{
