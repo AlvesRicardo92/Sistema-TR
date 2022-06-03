@@ -9,7 +9,7 @@ if(isset($_POST['usuario'], $_POST['p'])) {
    if(login($usuario, $password, $mysqli) == true) {
       // Login com sucesso
       //echo 'Sucesso: Você efetuou login.';
-      header('Location: PaginaHome.html');
+      header('Location: PaginaHome.php');
    } else {
       // Falha de login
       echo "ERRO";
