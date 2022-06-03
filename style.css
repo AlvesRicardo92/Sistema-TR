@@ -107,25 +107,28 @@ nav {
     
 }
 
-/*.carrogag {
-    
-}*/
+.carrogag {
+    width:400px;    
+}
 
 .carrorfj {
     position: absolute;
-    left: 550px;
+    width:400px;
+    left: 600px;
     top: 100px;
 }
 
 .carrofno {
     position: absolute;
-    left: 800px;
+    width:400px;
+    left: 950px;
     top: 100px;
 }
 
 .carroghy {
     position: absolute;
-    left: 1045px;
+    width:400px;
+    left: 1300px;
     top: 100px;
 }
 
@@ -138,7 +141,37 @@ nav {
 
 .km {
     position: absolute;
-    left: 560px;
+    left: 530px;
     top: 930px;
 }
-
+.observacoes{
+    position:absolute;
+    left:750px;
+    top:880px;
+}
+label#obs{
+    position:absolute;
+    top:0px;
+}
+.abastecido{
+    position:absolute;
+    left:750px;
+    top:1020px;
+}
+.abastecimentoLitros{
+    position:relative;
+    left:125px
+}
+.anexo{
+    position:relative;
+    left:365px;
+}
+.botoes{
+    position:relative;
+    left:700px;
+    top:20px;
+}
+.botoes button{
+    width:150px;
+    height:50px;
+}

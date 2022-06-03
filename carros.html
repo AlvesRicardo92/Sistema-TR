@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html lang="pt-br"><head>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -17,10 +15,10 @@
                 <input type="text" name="ADM" id="ADM">
                 <input type="text" name="data" id="data">
                 <label for="agendamento">Data de Agendamento</label>
-                <button type="submit">&#171;</button>
+                <button type="submit">«</button>
                 <input type="text" name="agendamento" id="agendamento">
                 <input type="text" name="agendamento" id="agendamento">
-                <button type="submit">&#187;</button>
+                <button type="submit">»</button>
                 
             </div>
 
@@ -140,7 +138,9 @@
                 <input type="checkbox" name="ckbCarro04_2400" id="ckbCarro04_2400">Bloqueio
             </div>
 
-            <div class="tanque">
+            <div class="tanque" style="
+    width: 300px;
+">
                 <p>Última atualização</p>
                 <label for="">Motorista</label><br>
                 <label for="">Quilometragem</label><br>
@@ -154,42 +154,48 @@
                 <label for="KMF">KM Final</label><br>
                 <input type="text" name="KMF" id="KMF"><br>
                 <label for="Combustivel:">Combustivel :</label>
-                <select name="Combustivel" id="Combustivel">
-                    <option selected disabled value="Selecione">Selecione uma Opção</option>
+                <select name="Combustivel" id="Combustivel" style="
+    width: 102px;
+">
+                    <option selected="" disabled="" value="Selecione">Selecione uma Opção</option>
                     <option value="teste1">teste 1</option>
                     <option value="teste2"> teste 2</option>
                 </select>
             </div>
 
             <div class="observacoes">
-                <label for="destino">Destino</label>
+                <label for="destino">Destino</label><br>
                 <textarea name="destino" id="destino" cols="30" rows="6" style="width: 26em;"></textarea>
-                <label for="OBS">OBS</label>
+                <label id="obs" for="OBS">OBS</label>
                 <textarea name="" id="" cols="30" rows="6" style="width: 26em;"></textarea>
-                <input type="text" name="" id="">
-                <button type="submit">Anexo</button>
+                
+                <br><div class="anexo"><button type="submit">Anexo</button><input type="text" name="" id="" style="
+    width: 280px;
+                    "></div>
 
             </div>
 
-            <div>
+            <div class="abastecido">
                 <input type="checkbox" name="abastecido" id="abastecido">
                 <label for="abastecido">Abastecido?</label>
-                <input type="text" name="abastecido" id="abastecido">
-                <label for="abastecido">KM</label>
-                <input type="text" name="abastecimento" id="abastecimento">
-                <label for="abastecimento">Litros</label>
-                <input type="checkbox" name="lavagem" id="lavagem">
+                <input type="text" name="abastecidoKM" id="abastecidoKM">
+                
+                <label for="abastecidoKM">KM</label><br>
+    <div class="abastecimentoLitros">
+<input type="text" name="abastecimentoLitros" id="abastecimentoLitros">
+                <label for="abastecimentoLitros">Litros</label>
+        </div><input type="checkbox" name="lavagem" id="lavagem">
                 <label for="lavagem">Necessario lavagem?</label>
             </div>
 
-            <div>
+            <div class="botoes">
                 <button type="submit">Novo</button>
                 <button type="submit">Agendar/Salvar</button>
                 <button type="submit">Cancelar</button>
-                <a href="PaginaHome.html"><input type="button" value="Voltar"></a>
+                <button>Voltar</button>
             </div>
         </form>
     </main>
     
-</body>
-</html>
+
+</body></html>
