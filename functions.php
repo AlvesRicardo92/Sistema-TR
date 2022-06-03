@@ -90,7 +90,7 @@ function login_check($mysqli) {
      $ip_address = $_SERVER['REMOTE_ADDR']; // Pega o endereço IP do usuário 
      $user_browser = $_SERVER['HTTP_USER_AGENT']; // Pega a string do usuário.
 
-     if ($stmt = $mysqli->prepare("SELECT password FROM members WHERE id = ? LIMIT 1")) { 
+     if ($stmt = $mysqli->prepare("SELECT senha FROM Login WHERE id = ? LIMIT 1")) { 
         $stmt->bind_param('i', $user_id); // Atribui "$user_id" ao parâmetro
         $stmt->execute(); // Executa a tarefa atribuía
         $stmt->store_result();
