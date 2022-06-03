@@ -1,5 +1,5 @@
 <?php
-include 'db_email$emailconnect.php';
+include 'db_connect.php';
 include 'functions.php';
 sec_session_start(); // Nossa segurança personalizada para iniciar uma sessão php. 
 
