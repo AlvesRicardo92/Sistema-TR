@@ -17,9 +17,9 @@
     <div class="login">
         <form method="post" action="process_login.php" method="POST">
             <label for="usuario"></label>
-            <input type="text" placeholder="Usuário" name="usuario" id="usuario"> </input><br>
-            <label for="senha"></label>
-            <input type="password" placeholder="Senha" name="password" id="password"></input> <br><br>
+            <input type="text" placeholder="Usuário" name="usuario" id="usuario"><br>
+            <label for="password"></label>
+            <input type="password" placeholder="Senha" name="password" id="password"><br><br>
             <input type="button" value="Acessar" onclick="formhash(this.form, this.form.password);">
         </form>
     </div>

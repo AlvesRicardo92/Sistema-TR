@@ -13,7 +13,7 @@ function sec_session_start() {
 }
 function login($usuario, $password, $mysqli) {
    // utilizar declarações preparadas significa que a injeção de código SQL não será possível. 
-   if ($stmt = $mysqli->prepare("SELECT id, nome, password, salt FROM Login WHERE nome = ? LIMIT 1")) { 
+   if ($stmt = $mysqli->prepare("SELECT id, nome, senha, salt FROM Login WHERE nome = ? LIMIT 1")) { 
       $stmt->bind_param('s', $usuario); // Vincula "$usuario" ao parâmetro.
       $stmt->execute(); // Executa a query preparada.
       $stmt->store_result();
