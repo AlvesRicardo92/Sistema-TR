@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="sha512.js"></script>
+    <script type="text/javascript" src="forms.js"></script>
     <title>Transporte PMSBC</title>
 </head>
 <body>
@@ -13,12 +15,12 @@
         
         <h1 class="titulo"> Secretária de Transporte</h1>   
     <div class="login">
-        <form method="post" action="PaginaHome.html">
+        <form method="post" action="process_login.php" method="POST">
             <label for="usuario"></label>
-            <input type="text" placeholder="Usuário" name="Usuário" id="Usuário"> </input><br>
+            <input type="text" placeholder="Usuário" name="usuario" id="usuario"> </input><br>
             <label for="senha"></label>
-            <input type="text" placeholder="Senha" name="Senha" id="Senha"></input> <br><br>
-            <button type="submit">Acessar</button>
+            <input type="password" placeholder="Senha" name="password" id="password"></input> <br><br>
+            <input type="button" value="Acessar" onclick="formhash(this.form, this.form.password);">
         </form>
     </div>
     

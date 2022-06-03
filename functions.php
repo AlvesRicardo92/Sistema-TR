@@ -11,23 +11,23 @@ function sec_session_start() {
         session_start(); // Inicia a sessão php.
         session_regenerate_id(true); // regenerada a sessão, deleta a outra.
 }
-function login($email, $password, $mysqli) {
+function login($usuario, $password, $mysqli) {
    // utilizar declarações preparadas significa que a injeção de código SQL não será possível. 
-   if ($stmt = $mysqli->prepare("SELECT id, username, password, salt FROM members WHERE email = ? LIMIT 1")) { 
-      $stmt->bind_param('s', $email); // Vincula "$email" ao parâmetro.
+   if ($stmt = $mysqli->prepare("SELECT id, nome, password, salt FROM Login WHERE nome = ? LIMIT 1")) { 
+      $stmt->bind_param('s', $usuario); // Vincula "$usuario" ao parâmetro.
       $stmt->execute(); // Executa a query preparada.
       $stmt->store_result();
       $stmt->bind_result($user_id, $username, $db_password, $salt); // obtém variáveis do resultado.
       $stmt->fetch();
-      echo "user id: ".$user_id."<br>";
+      /*echo "user id: ".$user_id."<br>";
       echo "username: ".$username."<br>";
       echo "db password: ".$db_password."<br>";
       echo "salt: ".$salt."<br>";
-      echo "e-mail: ".$email."<br>";
+      echo "e-mail: ".$usuario."<br>";
       echo "password: ".$password."<br>";
-      echo "password+salt: ".$password.$salt."<br>";
+      echo "password+salt: ".$password.$salt."<br>";*/
       $password = hash('sha512', $password.$salt); // confere o hash de "$password" e "$salt"
-      echo "SHA512 password+salt: ".$password."<br>";
+      /*echo "SHA512 password+salt: ".$password."<br>";*/
       if($stmt->num_rows == 1) { // se o usuário existe
          // Nós checamos se a conta está bloqueada devido a várias tentativas de login
          if(checkbrute($user_id, $mysqli) == true) { 
